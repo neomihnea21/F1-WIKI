@@ -1,0 +1,138 @@
+nav{
+  background-color: black;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-image{
+   width: 120px;
+   height: 100%;
+   z-index: 2;
+}
+.dropdown {
+  display: none;
+}
+.buton-sus{
+   height: 100%;
+   color: lavender;
+   background-color: inherit;
+   border: none;
+   display: inline-block;
+   font-size: 14pt;
+   font-family: arial;
+}
+.buton-sus:hover{
+  background-color: rgb(240, 15, 2);
+  color: black;
+}
+.meniu-dropdown:hover .dropdown {
+  display: inline-block;
+  position: absolute;
+  background-color: #a41403;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown a{
+   color: lightcyan;
+   font-size: 13pt;
+}
+.height-setter {
+  max-height: 98%;
+  padding-right: 10px;
+  margin-left: 15px;
+  background-color: silver;
+  border: 2px solid turquoise;
+  border-radius: 10%;
+}
+@media screen and (min-width: 850px) {
+  .organizare-echipa{
+     display: grid;
+     grid-template-columns: 30% 70%;
+  }
+  #organizare-continut{
+     display: grid;
+     grid-template-columns: 80% 20%;
+  }
+}
+@media screen and (max-width: 849px) {
+  .organizare-echipa{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+  }
+  #organizare-continut{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.organizare-echipa img{
+  height: auto;
+  max-width: 85%;
+}
+article{
+  border: 2px solid #e65a04;
+  margin: 4px;
+  padding: 10px;
+}
+.quote{
+   font-style: oblique;
+   color: red;
+   text-align: center;
+}
+@media screen and (min-width: 500px){
+    .imagine-echipa{
+       width: 70%;
+    }
+}
+.sideHeading{
+   text-align: center;
+}
+#tabel-constructori{
+   display: flex;
+   column-gap: 15px;
+   border: 2px solid red;
+   margin: 10px;
+}
+.coloana-constructori{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+footer{
+   background-color: black;
+   color: white;
+   margin: 8px;
+}
+h5{
+  font-size: 15pt;
+}
+.clasament{
+  height: auto;
+  transition: height 2s ease-in;
+}
+.clasament:hover{
+   height: 400px;
+}
+.tabel-pilot{
+    display: flex;
+    align-items: center;
+}
+.coloana-pilot{
+    display: flex;
+    flex-direction: column;
+}
+.date-pilot{
+     padding: 8px;
+     font-family: verdana;
+}
+.coloana-pilot:nth-of-type(even){
+     color: rgb(250, 3, 14);
+}
+.coloana-pilot:nth-of-type(odd){
+    color: slategray;
+}
