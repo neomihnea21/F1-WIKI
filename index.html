@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> F1 WIKI</title>
+    <link rel="stylesheet" href="colors.css">
+  </head>
+  <body>
+    <script src="stilat.js"></script>
+    <script src="login-control.js"></script>
+    <nav>
+      <a href="index.html"> <img src="f1-sigla.jpg" class="header-image" alt="Nu avem sigla"> </a>
+      <div class="meniu-dropdown">
+      <button class="buton-sus">Echipe</button>
+      <ul class="dropdown">
+        <li><a href="echipe.html">Red Bull</a></li>
+        <li><a href="echipe.html"> Mercedes </a></li>
+        <li><a href="echipe.html"> Ferrari </a></li>
+        <li><a href="echipe.html"> McLaren </a></li>
+        <li><a href="echipe.html"> Aston Martin </a></li>
+      </ul>
+    </div>
+   <div class="meniu-dropdown">
+   <button class="buton-sus">Piloti</button>
+    <ul class="dropdown">
+      <li><a href="piloti.html"> Fernando Alonso </a></li>
+      <li><a href="piloti.html"> Lewis Hamilton </a></li>
+      <li><a href="piloti.html"> Max Verstappen </a></li>
+      <li><a href="piloti.html"> Carlos Sainz </a></li>
+      <li><a href="piloti.html"> Lando Norris </a></li>
+    </ul>
+   </div>
+   <button class="buton-sus" id="currentUser"> Profil </button>
+   <button class="buton-sus" id="logout"> Logout </button>
+    </nav>
+    <div id="slideshow">
+    </div>
+    <div id="organizare-pagina">
+    <main id="lhs">
+      <article class="prezentare">
+        <h2 id="heading-main"> Despre F1 </h2>
+        <p> Formula 1, cunoscută drept regina motorsportului, este o competiție globală de automobilism care atrage milioane de fani din întreaga lume. Infiintata în 1950, aceasta a devenit un adevărat fenomen cultural.</p>
+      </article>
+  </main>
+    <aside class="clasament">
+      <h1 class="sideHeading"> Clasamentul Constructorilor </h1>
+      <p>Punctele obtinute de cele 10 echipe, pana azi, 24 martie 2024</p>
+      <div id="tabel-constructori">
+      <div class="coloana-constructori">
+        <div class="echipaf1"> Red Bull </div>
+        <div class="echipaf1"> Ferrari </div>
+        <div class="echipaf1"> McLaren </div>
+        <div class="echipaf1"> Mercedes </div>
+        <div class="echipaf1"> Aston Martin </div>
+        <div class="echipaf1"> AlphaTauri </div>
+        <div class="echipaf1"> Haas </div>
+        <div class="echipaf1"> Sauber </div>
+        <div class="echipaf1"> Williams </div>
+        <div class="echipaf1"> Alpine </div>
+      </div>
+      <div class="coloana-constructori">
+        <div class="scor-echipa"> 97 </div>
+        <div class="scor-echipa"> 93 </div>
+        <div class="scor-echipa"> 55 </div>
+        <div class="scor-echipa"> 26 </div>
+        <div class="scor-echipa"> 25 </div>
+        <div class="scor-echipa"> 6 </div>
+        <div class="scor-echipa"> 4 </div>
+        <div class="scor-echipa"> 0 </div>
+        <div class="scor-echipa"> 0 </div>
+        <div class="scor-echipa"> 0 </div>
+      </div>
+      </div>
+    </aside>
+  </div>
+  <footer>
+    <fieldset id="formular-final">
+    <form method="POST" action="index.html" id="logare">
+      <label for="email"> Email </label><br>
+      <input type="email" name="mailer" id="email-user"> <br>
+      <label for="password"> Parola </label> <br>
+      <input type="text" name="passworder" id="parola-user"><br> 
+      <input type="checkbox" name="abonat-stiri" id="newsletter">
+      <label> Ma abonez la newsletterul "Viata in viteza a 8-a"</label><br>
+      <input type="submit" value="Sign Up" id="signup"></input>
+    </form>
+  </fieldset>
+    Made by Neacsu Mihnea, 2024.
+  </footer>
+  </body>
+</html>
