@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> F1 WIKI</title>
     <link rel="stylesheet" href="colors.css">
   </head>
   <body>
+    <script src="stilat.js"></script>
+    <script src="login-control.js"></script>
     <nav>
       <a href="index.html"> <img src="f1-sigla.jpg" class="header-image" alt="Nu avem sigla"> </a>
       <div class="meniu-dropdown">
@@ -29,11 +32,13 @@
       <li><a href="piloti.html"> Lando Norris </a></li>
     </ul>
    </div>
+   <button class="buton-sus" id="currentUser"> Profil </button>
+   <button class="buton-sus" id="logout"> Logout </button>
     </nav>
     <div id="slideshow">
     </div>
     <div id="organizare-pagina">
-    <main>
+    <main id="lhs">
       <article class="prezentare">
         <h2 id="heading-main"> Despre F1 </h2>
         <p> Formula 1, cunoscută drept regina motorsportului, este o competiție globală de automobilism care atrage milioane de fani din întreaga lume. Infiintata în 1950, aceasta a devenit un adevărat fenomen cultural.</p>
@@ -71,6 +76,17 @@
     </aside>
   </div>
   <footer>
+    <fieldset id="formular-final">
+    <form method="POST" action="index.html" id="logare">
+      <label for="email"> Email </label><br>
+      <input type="email" name="mailer" id="email-user"> <br>
+      <label for="password"> Parola </label> <br>
+      <input type="text" name="passworder" id="parola-user"><br> 
+      <input type="checkbox" name="abonat-stiri" id="newsletter">
+      <label> Ma abonez la newsletterul "Viata in viteza a 8-a"</label><br>
+      <input type="submit" value="Sign Up" id="signup"></input>
+    </form>
+  </fieldset>
     Made by Neacsu Mihnea, 2024.
   </footer>
   </body>
